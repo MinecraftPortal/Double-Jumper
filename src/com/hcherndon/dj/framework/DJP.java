@@ -2,6 +2,7 @@ package com.hcherndon.dj.framework;
 
 import com.hcherndon.dj.DoubleJumper;
 import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
@@ -169,6 +170,7 @@ public class DJP {
         v.add(new Vector(0, DoubleJumper.getInstance().getHeightAdditive(), 0));
         v.multiply(DoubleJumper.getInstance().getMultiplier());
         setVelocity(v);
+        getPlayer().getWorld().playSound(getPlayer().getLocation(), Sound.ENDERDRAGON_WINGS, (float) 1.8, 2);
         startWatch();
         setPlayerAllowCFlight(false);
     }

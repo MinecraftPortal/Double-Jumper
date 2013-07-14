@@ -48,6 +48,7 @@ public class Listeners implements Listener{
             if(DoubleJumper.getInstance().getDJP((Player) e.getEntity()) != null){
                 if(DoubleJumper.getInstance().getDJP((Player) e.getEntity()).getMode().equals(Mode.DOUBLE_JUMPING)){
                     if(e.getCause().equals(EntityDamageEvent.DamageCause.FALL)){
+                        e.getEntity().setFallDistance(0);
                         e.setCancelled(true);
                     }
                 }
