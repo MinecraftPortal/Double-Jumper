@@ -168,6 +168,14 @@ public class DJP {
 
     public void doIt(){
         inJump = true;
+        Vector v = player.getVelocity();
+        v.normalize();
+        v.multiply(DoubleJumper.getInstance().getHorizontalMultiplier());
+        v.add(new Vector(0, DoubleJumper.getInstance().getHeightAdditive(), 0));
+        v.multiply(DoubleJumper.getInstance().getMultiplier());
+        setVelocity(v);
+        startWatch();
+        /* WAT
         Vector v = player.getLocation().getDirection().clone();
         v.normalize();
         v.multiply(DoubleJumper.getInstance().getHorizontalMultiplier());
@@ -175,6 +183,7 @@ public class DJP {
         v.multiply(DoubleJumper.getInstance().getMultiplier());
         setVelocity(v);
         startWatch();
+        */
     }
 
     public void startCooldown(){
@@ -205,7 +214,6 @@ public class DJP {
                         return;
                     }else return;
                 }catch (Exception e){
-                    e.printStackTrace();
                     cancelCurrentTask();
                 }
             }
