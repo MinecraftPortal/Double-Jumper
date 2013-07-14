@@ -35,6 +35,8 @@ public class DoubleJumper extends JavaPlugin {
     @Override
     public void onEnable(){
         this.djps = new ArrayList<DJP>();
+        setDefaults();
+        loadConfigOptions();
         config = getConfig();
         instance = this;
         new CommandRegister(this);

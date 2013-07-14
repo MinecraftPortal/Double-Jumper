@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373763470673" ignored="false" />
     <file path="/plugin.yml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373758722356" ignored="false" />
-    <file path="/DoubleJumper.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373764974577" ignored="false" />
+    <file path="/DoubleJumper.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373765139562" ignored="false" />
     <file path="/pom.xml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373763038443" ignored="false" />
     <file path="/DJP.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373764595103" ignored="false" />
     <file path="/Mode.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373751541421" ignored="false" />
@@ -117,7 +117,7 @@
       <file leaf-file-name="DoubleJumper.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="40" selection-start="920" selection-end="920" vertical-scroll-proportion="0.71428573">
+            <state line="38" column="28" selection-start="973" selection-end="973" vertical-scroll-proportion="0.7373272">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -471,7 +471,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -485,7 +485,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6011396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6011396" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -671,7 +671,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="40" selection-start="920" selection-end="920" vertical-scroll-proportion="0.71428573">
+        <state line="38" column="28" selection-start="973" selection-end="973" vertical-scroll-proportion="0.7373272">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
