@@ -132,6 +132,7 @@ public class DoubleJumper extends JavaPlugin {
     }
 
     public void loadConfigOptions(){
+        reloadConfig();
         this.cooldown = getConfig().getLong("cooldownInTicks");
         this.heightAdditive = getConfig().getDouble("heightAdditive");
         this.horizontalMultiplier = getConfig().getDouble("horizontalMultiplier");

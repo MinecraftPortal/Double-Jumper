@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java" afterPath="$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java" afterPath="$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java" />
     </list>
     <ignored path="Double Jumper.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373765766530" ignored="false" />
     <file path="/plugin.yml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373758722356" ignored="false" />
-    <file path="/DoubleJumper.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373767104470" ignored="false" />
+    <file path="/DoubleJumper.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373767704954" ignored="false" />
     <file path="/pom.xml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373763038443" ignored="false" />
     <file path="/DJP.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373767475344" ignored="false" />
     <file path="/Mode.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373751541421" ignored="false" />
@@ -21,7 +20,7 @@
     <file path="/Validate.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373754742375" ignored="false" />
     <file path="/Commands.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373758210087" ignored="false" />
     <file path="$PROJECT_DIR$/project/pom.xml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373763208489" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373767476890" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373767709779" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,19 +117,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoubleJumper.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DoubleJumper.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="20" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="134" column="23" selection-start="3430" selection-end="3430" vertical-scroll-proportion="0.49308756">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DJP.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DJP.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="48" selection-start="5772" selection-end="5772" vertical-scroll-proportion="0.6238245">
+            <state line="202" column="48" selection-start="5772" selection-end="5772" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1781#1813#0" expanded="true" />
@@ -182,8 +183,8 @@
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/src/src/com/hcherndon/dj/Commands.java" />
         <option value="$PROJECT_DIR$/src/com/hcherndon/dj/Listeners.java" />
-        <option value="$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java" />
         <option value="$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java" />
+        <option value="$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java" />
       </list>
     </option>
   </component>
@@ -474,7 +475,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -489,7 +490,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -658,19 +659,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="48" selection-start="5772" selection-end="5772" vertical-scroll-proportion="0.6238245">
+        <state line="202" column="48" selection-start="5772" selection-end="5772" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1781#1813#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="23" selection-start="3430" selection-end="3430" vertical-scroll-proportion="0.49308756">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
