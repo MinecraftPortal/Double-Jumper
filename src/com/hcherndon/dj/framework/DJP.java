@@ -168,9 +168,11 @@ public class DJP {
 
     public void doIt(){
         inJump = true;
-        Vector v = VectorUtil.calculateLookVector(getPlayer().getLocation()).normalize();
+        Vector v = player.getLocation().getDirection().clone();
+        v.normalize();
+        v.divide(new Vector(2, 2, 2));
         v.multiply(DoubleJumper.getInstance().getHorizontalMultiplier());
-        v.setY(v.getY() + DoubleJumper.getInstance().getHeightAdditive());
+        v.add(new Vector(0, DoubleJumper.getInstance().getHeightAdditive(), 0));
         v.multiply(DoubleJumper.getInstance().getMultiplier());
         setVelocity(v);
         startWatch();
