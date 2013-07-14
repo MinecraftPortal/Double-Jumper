@@ -140,12 +140,5 @@ public class DoubleJumper extends JavaPlugin {
         this.flyPerm = getConfig().getString("flyPermission");
         this.djPerm = getConfig().getString("doubleJumpPermission");
         this.flyCommand = getConfig().getString("toggleFlightCommand");
-        System.out.println(getCooldown());
-        System.out.println(getHeightAdditive());
-        System.out.println(getHorizontalMultiplier());
-        System.out.println(getFlyCommand());
-        System.out.println(getDjPerm());
-        System.out.println(getFlyPerm());
-        System.out.println(getMultiplier());
     }
 }
