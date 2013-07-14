@@ -205,6 +205,7 @@ public class DJP {
                         return;
                     }else return;
                 }catch (Exception e){
+                    e.printStackTrace();
                     cancelCurrentTask();
                 }
             }
