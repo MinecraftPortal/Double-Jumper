@@ -30,6 +30,11 @@ public class DJP {
         setup();
     }
 
+    public void overrideToggleDoubleJump(){
+        if(canPlayerDoubleJump()) this.canDoubleJump = false;
+        else this.canDoubleJump = true;
+    }
+
     public void setup(){
         setupAllowedModes();
         if(canPlayerDoubleJump()){
