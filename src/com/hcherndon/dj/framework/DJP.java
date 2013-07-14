@@ -26,6 +26,7 @@ public class DJP {
 
     public DJP(Player pl){
         this.player = pl;
+        setup();
     }
 
     public void setup(){

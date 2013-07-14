@@ -8,7 +8,7 @@
     <file path="/plugin.yml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373758722356" ignored="false" />
     <file path="/DoubleJumper.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373758268542" ignored="false" />
     <file path="/pom.xml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373763038443" ignored="false" />
-    <file path="/DJP.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373757638822" ignored="false" />
+    <file path="/DJP.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373764595103" ignored="false" />
     <file path="/Mode.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373751541421" ignored="false" />
     <file path="/fragment.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373752606802" ignored="false" />
     <file path="/Vector.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373757602811" ignored="false" />
@@ -114,11 +114,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoubleJumper.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DoubleJumper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="13" selection-start="443" selection-end="443" vertical-scroll-proportion="0.022255193">
+            <state line="74" column="29" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DJP.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="16" selection-start="631" selection-end="631" vertical-scroll-proportion="0.56426334">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Listeners.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/Listeners.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="34" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,7 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/src/com/hcherndon/dj/framework/Mode.java" />
         <option value="$PROJECT_DIR$/src/src/com/hcherndon/dj/framework/CommandRegister.java" />
         <option value="$PROJECT_DIR$/src/src/com/hcherndon/dj/framework/EListener.java" />
         <option value="$PROJECT_DIR$/src/src/com/hcherndon/dj/framework/Listener.java" />
@@ -156,6 +177,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/src/src/com/hcherndon/dj/Commands.java" />
+        <option value="$PROJECT_DIR$/src/com/hcherndon/dj/Listeners.java" />
+        <option value="$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java" />
       </list>
     </option>
   </component>
@@ -281,6 +304,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Double Jumper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Double Jumper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -424,7 +469,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -438,7 +483,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6011396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6011396" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -523,7 +568,9 @@
     <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/Listeners.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="38" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -544,13 +591,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="37" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/Commandation.java">
@@ -577,13 +617,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/Validate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="17" selection-start="691" selection-end="691" vertical-scroll-proportion="0.66765577">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/Listeners.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="38" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -616,10 +649,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/Listeners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="34" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="443" selection-end="443" vertical-scroll-proportion="0.022255193">
+        <state line="74" column="29" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="16" selection-start="631" selection-end="631" vertical-scroll-proportion="0.56426334">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
