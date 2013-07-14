@@ -16,12 +16,10 @@ public class DJP {
     private Player player;
     private Mode mode;
 
-    private boolean canFly = false;
-    private boolean canDoubleJump = false;
-
     private boolean inJump = false;
 
     private boolean isInCooldown = false;
+    private boolean overriddenDJ = false;
 
     private int currentTaskId = -1;
 
@@ -31,12 +29,14 @@ public class DJP {
     }
 
     public void overrideToggleDoubleJump(){
-        if(canPlayerDoubleJump()) this.canDoubleJump = false;
-        else this.canDoubleJump = true;
+        this.overriddenDJ = !overriddenDJ;
+        if(overriddenDJ)
+            setMode(Mode.DOUBLE_JUMPING);
+        else
+            setMode(Mode.JUMP);
     }
 
     public void setup(){
-        setupAllowedModes();
         if(canPlayerDoubleJump()){
             setMode(Mode.DOUBLE_JUMPING);
             setPlayerAllowCFlight(true);
@@ -46,13 +46,6 @@ public class DJP {
             setPlayerAllowCFlight(false);
             setPlayerCFlying(false);
         }
-    }
-
-    private void setupAllowedModes(){
-        if(hasPermission(DoubleJumper.getInstance().getFlyPerm()))
-            canFly = true;
-        if(hasPermission(DoubleJumper.getInstance().getDjPerm()))
-            canDoubleJump = true;
     }
 
     public Player getPlayer(){
@@ -76,15 +69,29 @@ public class DJP {
     }
 
     public boolean canPlayerFly(){
-        return canFly;
+        return hasPermission(DoubleJumper.getInstance().getFlyPerm());
     }
 
     public boolean canPlayerDoubleJump(){
-        return canDoubleJump;
+        return hasPermission(DoubleJumper.getInstance().getDjPerm());
     }
 
     public void setMode(Mode m){
         this.mode = m;
+        if(m.equals(Mode.FLYING)){
+            setPlayerAllowCFlight(true);
+            return;
+        }
+        if(m.equals(Mode.DOUBLE_JUMPING)){
+            setPlayerAllowCFlight(true);
+            setPlayerCFlying(false);
+            return;
+        }
+        if(m.equals(Mode.JUMP)){
+            setPlayerAllowCFlight(false);
+            setPlayerCFlying(false);
+            return;
+        }
     }
 
     @SuppressWarnings("deprecation")
@@ -118,31 +125,6 @@ public class DJP {
         }
         else {
             println("&aYou are now flying!");
-            setMode(Mode.FLYING);
-            return;
-        }
-    }
-
-    public void cycleModes(){
-        if(!canPlayerFly() && !canPlayerDoubleJump()){
-            println("&cYou do not have any modes available!");
-            return;
-        }
-        if(this.getMode().equals(Mode.FLYING) && canPlayerFly()){
-            println("&aYou are now Double Jumping!");
-            setMode(Mode.DOUBLE_JUMPING);
-            setPlayerAllowCFlight(true);
-            setPlayerCFlying(false);
-            return;
-        } else if(this.getMode().equals(Mode.DOUBLE_JUMPING) && canPlayerDoubleJump()){
-            println("&aYou are now Jumping!");
-            setPlayerAllowCFlight(false);
-            setPlayerCFlying(false);
-            setMode(Mode.JUMP);
-            return;
-        } else {
-            println("&aYou are now Flying!");
-            setPlayerAllowCFlight(true);
             setMode(Mode.FLYING);
             return;
         }

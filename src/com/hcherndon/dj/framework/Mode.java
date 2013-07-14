@@ -1,5 +1,7 @@
 package com.hcherndon.dj.framework;
 
+import com.hcherndon.dj.DoubleJumper;
+
 /**
  * Created with IntelliJ IDEA.
  * User: HcHerndon
@@ -13,4 +15,12 @@ public enum Mode {
     DOUBLE_JUMPING(),
 
     JUMP();
+
+    public static String getValue(Mode m){
+        if(m.equals(FLYING))
+            return DoubleJumper.getInstance().getFlyPerm();
+        else if(m.equals(DOUBLE_JUMPING))
+            return DoubleJumper.getInstance().getDjPerm();
+        else return "";
+    }
 }

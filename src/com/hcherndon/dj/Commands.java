@@ -24,27 +24,22 @@ public class Commands {
         sender.sendMessage(ChatColor.GREEN + "Config reloaded!");
     }
 
-    @Command(name = "mode", desc = "Set or cycle through modes!")
+    @Command(name = "mode", desc = "Set your mode!", sender = Commandation.Sender.PLAYER)
     public static void mode(Player pl, String... args){
         DJP p = DoubleJumper.getInstance().getDJP(pl);
         if(args.length > 0){
-            StringBuffer st = new StringBuffer();
-            for(String s : args)
-                st.append(s + " ");
-            String mode = st.toString();
-            if(Mode.valueOf(mode.toUpperCase().replaceAll(" ", "_")) != null){
-                p.setMode(Mode.valueOf(mode.toUpperCase().replaceAll(" ", "_")));
-                p.println("&aMode set to " + mode + "!");
-                if(Mode.valueOf(mode.toUpperCase().replaceAll(" ", "_")).equals(Mode.DOUBLE_JUMPING) || Mode.valueOf(mode.toUpperCase().replaceAll(" ", "_")).equals(Mode.FLYING))
-                    p.setPlayerAllowCFlight(true);
-                else p.setPlayerAllowCFlight(false);
-            } else {
-                p.println("&cNot a valid mode!");
-                return;
-            }
-        } else {
-            p.cycleModes();
+            p.println("&cMissing argument!");
+            p.println("&cModes: Flying, Double_Jump, Jump");
+            return;
         }
+        if(Mode.valueOf(args[0].toUpperCase()) == null){
+            p.println("&cNot a valid mode!");
+            p.println("&cModes: Flying, Double_Jump, Jump");
+            return;
+        }
+        p.setMode(Mode.valueOf(args[0].toUpperCase()));
+
+        return;
     }
 
     @Command(name = "djtp", permission = "doublejumper.tp", desc = "Toggle double jump for the defined player, regardless of perms.", sender = Commandation.Sender.EVERYONE)
