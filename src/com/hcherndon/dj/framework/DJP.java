@@ -178,15 +178,18 @@ public class DJP {
         vector.add(new Vector(0, DoubleJumper.getInstance().getHeightAdditive(), 0));
         vector.multiply(DoubleJumper.getInstance().getMultiplier());
         setVelocity((Vector) vector.normalize());
+        startWatch();
     }
 
     public void startCooldown(){
-        DoubleJumper.getInstance().getServer().getScheduler().scheduleSyncDelayedTask(DoubleJumper.getInstance(), new Runnable() {
-            @Override
-            public void run() {
-                isInCooldown = false;
-            }
-        }, DoubleJumper.getInstance().getCooldown());
+        if(DoubleJumper.getInstance().getCooldown() > 0)
+            DoubleJumper.getInstance().getServer().getScheduler().scheduleSyncDelayedTask(DoubleJumper.getInstance(), new Runnable() {
+                @Override
+                public void run() {
+                    isInCooldown = false;
+                    println("&cJump cooled down!");
+                }
+            }, DoubleJumper.getInstance().getCooldown());
     }
 
     public void startWatch(){
@@ -198,6 +201,7 @@ public class DJP {
                         inJump = false;
                         isInCooldown = true;
                         cancelCurrentTask();
+                        startCooldown();
                         return;
                     }else return;
                 }catch (Exception e){
