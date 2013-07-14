@@ -6,8 +6,10 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
 
 /**
  * Created with IntelliJ IDEA.
@@ -88,6 +90,12 @@ public class DoubleJumper extends JavaPlugin {
 
     public void setDefaults(){
         if(!getFile().exists()){
+            try {
+                getLogger().log(Level.INFO, "Creating new config!");
+                getFile().createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             reloadConfig();
             saveConfig();
             getConfig().set("cooldownInTicks", 200);
