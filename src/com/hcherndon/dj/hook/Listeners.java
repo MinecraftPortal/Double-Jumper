@@ -23,12 +23,14 @@ public class Listeners implements Listener{
 
     @EventHandler(priority = EventPriority.NORMAL)
     public void onQuit(PlayerQuitEvent e){
-        DoubleJumper.getInstance().getDJP(e.getPlayer().getName()).decimate();
+        if(DoubleJumper.getInstance().getDJP(e.getPlayer().getName()) != null)
+            DoubleJumper.getInstance().getDJP(e.getPlayer().getName()).decimate();
     }
 
     @EventHandler(priority = EventPriority.NORMAL)
     public void onKick(PlayerKickEvent e){
-        DoubleJumper.getInstance().getDJP(e.getPlayer().getName()).decimate();
+        if(DoubleJumper.getInstance().getDJP(e.getPlayer().getName()) != null)
+            DoubleJumper.getInstance().getDJP(e.getPlayer().getName()).decimate();
     }
 
     @EventHandler(priority = EventPriority.HIGH)
