@@ -59,7 +59,7 @@ public class Commands {
             return;
         }
         d.overrideToggleDoubleJump();
-        sender.sendMessage(ChatColor.GREEN + "Player force toggled! Currently: " + d.canPlayerDoubleJump());
+        sender.sendMessage(ChatColor.GREEN + "Player force toggled! Currently: " + d.isOverriddenDJ());
         return;
     }
 

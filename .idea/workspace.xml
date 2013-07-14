@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hcherndon/dj/Commands.java" afterPath="$PROJECT_DIR$/src/com/hcherndon/dj/Commands.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java" afterPath="$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java" />
     </list>
     <ignored path="Double Jumper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -10,7 +11,7 @@
     <file path="/plugin.yml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373758722356" ignored="false" />
     <file path="/DoubleJumper.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373769880556" ignored="false" />
     <file path="/pom.xml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373763038443" ignored="false" />
-    <file path="/DJP.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373771188478" ignored="false" />
+    <file path="/DJP.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373775901667" ignored="false" />
     <file path="/Mode.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373771418856" ignored="false" />
     <file path="/fragment.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373752606802" ignored="false" />
     <file path="/Vector.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373757602811" ignored="false" />
@@ -18,9 +19,9 @@
     <file path="/EListener.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373753120939" ignored="false" />
     <file path="/Listeners.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373756314686" ignored="false" />
     <file path="/Validate.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373754742375" ignored="false" />
-    <file path="/Commands.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373775666840" ignored="false" />
+    <file path="/Commands.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373775913445" ignored="false" />
     <file path="$PROJECT_DIR$/project/pom.xml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373763208489" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373775751852" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373775919080" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,7 @@
       <file leaf-file-name="Commands.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/Commands.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="54" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.7034796">
+            <state line="61" column="101" selection-start="2474" selection-end="2474" vertical-scroll-proportion="0.56732225">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,14 +134,14 @@
       <file leaf-file-name="DJP.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="34" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.0">
+            <state line="39" column="28" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2296#2328#0" expanded="true" />
-                <element signature="e#4525#4729#0" expanded="true" />
-                <element signature="e#4714#4715#0" expanded="true" />
-                <element signature="e#4948#5625#0" expanded="true" />
-                <element signature="e#5614#5615#0" expanded="true" />
+                <element signature="e#2369#2401#0" expanded="true" />
+                <element signature="e#4598#4802#0" expanded="true" />
+                <element signature="e#4787#4788#0" expanded="true" />
+                <element signature="e#5021#5698#0" expanded="true" />
+                <element signature="e#5687#5688#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -188,8 +189,8 @@
         <option value="$PROJECT_DIR$/src/com/hcherndon/dj/Listeners.java" />
         <option value="$PROJECT_DIR$/src/com/hcherndon/dj/framework/VectorUtil.java" />
         <option value="$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java" />
-        <option value="$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java" />
         <option value="$PROJECT_DIR$/src/com/hcherndon/dj/framework/Mode.java" />
+        <option value="$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java" />
         <option value="$PROJECT_DIR$/src/com/hcherndon/dj/Commands.java" />
       </list>
     </option>
@@ -650,6 +651,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="43" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="28" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2369#2401#0" expanded="true" />
+            <element signature="e#4598#4802#0" expanded="true" />
+            <element signature="e#4787#4788#0" expanded="true" />
+            <element signature="e#5021#5698#0" expanded="true" />
+            <element signature="e#5687#5688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="131" column="5" selection-start="3368" selection-end="3368" vertical-scroll-proportion="0.0">
@@ -659,38 +681,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/Commandation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="13" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/Mode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="34" selection-start="1920" selection-end="1920" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2296#2328#0" expanded="true" />
-            <element signature="e#4525#4729#0" expanded="true" />
-            <element signature="e#4714#4715#0" expanded="true" />
-            <element signature="e#4948#5625#0" expanded="true" />
-            <element signature="e#5614#5615#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -703,9 +697,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/Mode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="23" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/Commands.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="54" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.7034796">
+        <state line="61" column="101" selection-start="2474" selection-end="2474" vertical-scroll-proportion="0.56732225">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

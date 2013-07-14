@@ -36,6 +36,10 @@ public class DJP {
             setMode(Mode.JUMP);
     }
 
+    public boolean isOverriddenDJ(){
+        return overriddenDJ;
+    }
+
     public void setup(){
         if(canPlayerDoubleJump()){
             setMode(Mode.DOUBLE_JUMPING);
