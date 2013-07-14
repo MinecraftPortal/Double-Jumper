@@ -3,6 +3,7 @@ package com.hcherndon.dj.framework;
 import com.hcherndon.dj.DoubleJumper;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
+import org.bukkit.util.Vector;
 
 /**
  * Created with IntelliJ IDEA.

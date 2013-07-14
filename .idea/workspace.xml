@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java" afterPath="$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/hcherndon/dj/framework/Vector.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java" afterPath="$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Double Jumper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +22,6 @@
     <file path="/Validate.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373754742375" ignored="false" />
     <file path="/Commands.java" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373758210087" ignored="false" />
     <file path="$PROJECT_DIR$/project/pom.xml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373763208489" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1373766037534" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoubleJumper.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DoubleJumper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="30" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.42857143">
+            <state line="94" column="30" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,10 +129,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DJP.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DJP.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="16" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+            <state line="89" column="31" selection-start="2028" selection-end="2028" vertical-scroll-proportion="-1.5110565">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -182,8 +183,8 @@
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/src/src/com/hcherndon/dj/Commands.java" />
         <option value="$PROJECT_DIR$/src/com/hcherndon/dj/Listeners.java" />
-        <option value="$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java" />
         <option value="$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java" />
+        <option value="$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java" />
       </list>
     </option>
   </component>
@@ -593,11 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/Commandation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="37" selection-end="555" vertical-scroll-proportion="0.0">
@@ -663,18 +659,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="16" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+        <state line="94" column="30" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/DoubleJumper.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hcherndon/dj/framework/DJP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="30" selection-start="2441" selection-end="2441" vertical-scroll-proportion="0.42857143">
+        <state line="89" column="31" selection-start="2028" selection-end="2028" vertical-scroll-proportion="-1.5110565">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
