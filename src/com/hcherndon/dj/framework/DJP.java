@@ -158,10 +158,6 @@ public class DJP {
         else throw new IllegalStateException("Player mode not found! This should not occur!");
     }
 
-    public Vector getVelocity(){
-        return (Vector) getPlayer().getVelocity();
-    }
-
     public boolean isInJump(){
         return inJump;
     }
@@ -172,12 +168,12 @@ public class DJP {
 
     public void doIt(){
         inJump = true;
-        Vector vector = new Vector();
-        vector = getVelocity();
-        vector.multiply(DoubleJumper.getInstance().getHorizontalMultiplier());
-        vector.add(new Vector(0, DoubleJumper.getInstance().getHeightAdditive(), 0));
-        vector.multiply(DoubleJumper.getInstance().getMultiplier());
-        setVelocity((Vector) vector.normalize());
+        Vector v = player.getLocation().getDirection().clone();
+        v.normalize();
+        v.multiply(DoubleJumper.getInstance().getHorizontalMultiplier());
+        v.add(new Vector(0, DoubleJumper.getInstance().getHeightAdditive(), 0));
+        v.multiply(DoubleJumper.getInstance().getMultiplier());
+        setVelocity(v);
         startWatch();
     }
 
@@ -199,9 +195,13 @@ public class DJP {
                 try{
                     if(isOnGround()){
                         inJump = false;
-                        isInCooldown = true;
                         cancelCurrentTask();
-                        startCooldown();
+                        if(DoubleJumper.getInstance().getCooldown() > 0){
+                            startCooldown();
+                            isInCooldown = true;
+                        } else{
+                            isInCooldown = false;
+                        }
                         return;
                     }else return;
                 }catch (Exception e){
