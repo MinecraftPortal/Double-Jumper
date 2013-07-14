@@ -37,7 +37,12 @@ public class Commands {
             p.println("&cModes: Flying, Double_Jump, Jump");
             return;
         }
+        if(!p.hasPermission(Mode.getValue(Mode.valueOf(args[0].toUpperCase())))){
+            p.println("&cYou do not have permission to access mode " + args[0] + "!");
+            return;
+        }
         p.setMode(Mode.valueOf(args[0].toUpperCase()));
+
 
         return;
     }
