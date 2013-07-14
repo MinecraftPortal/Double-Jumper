@@ -36,6 +36,10 @@ public class DJP {
             setMode(Mode.DOUBLE_JUMPING);
             setPlayerAllowCFlight(true);
             setPlayerCFlying(false);
+        } else {
+            setMode(Mode.JUMP);
+            setPlayerAllowCFlight(false);
+            setPlayerCFlying(false);
         }
     }
 
@@ -134,7 +138,6 @@ public class DJP {
         } else {
             println("&aYou are now Flying!");
             setPlayerAllowCFlight(true);
-            setPlayerCFlying(true);
             setMode(Mode.FLYING);
             return;
         }
