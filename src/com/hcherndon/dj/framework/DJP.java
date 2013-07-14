@@ -173,6 +173,7 @@ public class DJP {
         v.setY(v.getY() + DoubleJumper.getInstance().getHeightAdditive());
         v.multiply(DoubleJumper.getInstance().getMultiplier());
         setVelocity(v);
+        startWatch();
     }
 
     public void startCooldown(){
