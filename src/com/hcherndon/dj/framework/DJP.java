@@ -192,7 +192,7 @@ public class DJP {
                 @Override
                 public void run() {
                     isInCooldown = false;
-                    println("&cJump cooled down!");
+                    println("&aJump cooled down!");
                 }
             }, DoubleJumper.getInstance().getCooldown());
     }
