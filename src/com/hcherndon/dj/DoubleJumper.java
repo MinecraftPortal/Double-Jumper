@@ -6,6 +6,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +22,7 @@ import java.util.logging.Level;
 public class DoubleJumper extends JavaPlugin {
     private List<DJP> djps;
     private FileConfiguration config;
+    private File conFile;
 
     private static DoubleJumper instance;
 
@@ -36,6 +38,7 @@ public class DoubleJumper extends JavaPlugin {
 
     @Override
     public void onEnable(){
+        conFile = new File("plugins/DoubleJumper/config.yml");
         this.djps = new ArrayList<DJP>();
         setDefaults();
         loadConfigOptions();
@@ -89,10 +92,10 @@ public class DoubleJumper extends JavaPlugin {
     }
 
     public void setDefaults(){
-        if(!getFile().exists()){
+        if(!conFile.exists()){
             try {
                 getLogger().log(Level.INFO, "Creating new config!");
-                getFile().createNewFile();
+                conFile.createNewFile();
             } catch (IOException e) {
                 e.printStackTrace();
             }
