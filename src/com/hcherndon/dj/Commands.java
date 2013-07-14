@@ -27,7 +27,7 @@ public class Commands {
     @Command(name = "mode", desc = "Set your mode!", sender = Commandation.Sender.PLAYER)
     public static void mode(Player pl, String... args){
         DJP p = DoubleJumper.getInstance().getDJP(pl);
-        if(args.length > 0){
+        if(!(args.length > 0)){
             p.println("&cMissing argument!");
             p.println("&cModes: Flying, Double_Jump, Jump");
             return;
