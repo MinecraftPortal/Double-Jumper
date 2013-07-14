@@ -43,13 +43,19 @@ public class Listeners implements Listener{
     }
 
     @EventHandler(priority = EventPriority.HIGH)
-    public void onPlayerDamageEvent(EntityDamageEvent e){
+    public void onPlayerDamageEvent(final EntityDamageEvent e){
         if(e.getEntity() instanceof Player){
             if(DoubleJumper.getInstance().getDJP((Player) e.getEntity()) != null){
                 if(DoubleJumper.getInstance().getDJP((Player) e.getEntity()).getMode().equals(Mode.DOUBLE_JUMPING)){
                     if(e.getCause().equals(EntityDamageEvent.DamageCause.FALL)){
-                        e.getEntity().setFallDistance(0);
+                        DoubleJumper.getInstance().getDJP((Player) e.getEntity()).setPlayerAllowCFlight(true);
                         e.setCancelled(true);
+                        DoubleJumper.getInstance().getServer().getScheduler().scheduleSyncDelayedTask(DoubleJumper.getInstance(), new Runnable() {
+                            @Override
+                            public void run() {
+                                DoubleJumper.getInstance().getDJP((Player) e.getEntity()).setPlayerAllowCFlight(false);
+                            }
+                        }, 2L);
                     }
                 }
             } else
