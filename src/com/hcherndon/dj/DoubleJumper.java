@@ -6,6 +6,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,6 +34,7 @@ public class DoubleJumper extends JavaPlugin {
 
     @Override
     public void onEnable(){
+        this.djps = new ArrayList<DJP>();
         config = getConfig();
         instance = this;
         new CommandRegister(this);
