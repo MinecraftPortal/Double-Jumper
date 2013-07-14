@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DoubleJumper.iml" filepath="$PROJECT_DIR$/DoubleJumper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dj/dj.iml" filepath="$PROJECT_DIR$/dj/dj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/doublejumper/doublejumper.iml" filepath="$PROJECT_DIR$/doublejumper/doublejumper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/src.iml" filepath="$PROJECT_DIR$/src/src.iml" />
+    </modules>
+  </component>
+</project>
+
