@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.hcherndon</groupId>
   <artifactId>DoubleJumper</artifactId>
-  <version>0.2.4</version>
+  <version>1.0.0</version>
   <name>Double Jumper - ${project.version}</name>
   <description>A simple great double jumper!</description>
     <build>
