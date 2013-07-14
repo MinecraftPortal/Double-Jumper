@@ -2,10 +2,13 @@ package com.hcherndon.dj.hook;
 
 import com.hcherndon.dj.DoubleJumper;
 import com.hcherndon.dj.framework.DJP;
+import com.hcherndon.dj.framework.Mode;
 import com.hcherndon.dj.framework.Validate;
+import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.player.*;
 
 /**
@@ -37,6 +40,21 @@ public class Listeners implements Listener{
     public void onToggleFlight(PlayerToggleFlightEvent e){
         Validate.checkNullDJP(e.getPlayer().getName());
         e.setCancelled(DoubleJumper.getInstance().getDJP(e.getPlayer()).invoke());
+    }
+
+    @EventHandler(priority = EventPriority.HIGH)
+    public void onPlayerDamageEvent(EntityDamageEvent e){
+        if(e.getEntity() instanceof Player){
+            if(DoubleJumper.getInstance().getDJP((Player) e.getEntity()) != null){
+                if(DoubleJumper.getInstance().getDJP((Player) e.getEntity()).getMode().equals(Mode.DOUBLE_JUMPING)){
+                    if(e.getCause().equals(EntityDamageEvent.DamageCause.FALL)){
+                        e.setCancelled(true);
+                    }
+                }
+            } else
+                return;
+        } else
+            return;
     }
 
     @EventHandler(priority = EventPriority.HIGH)
