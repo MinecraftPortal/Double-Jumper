@@ -29,12 +29,12 @@ public class Commands {
         DJP p = DoubleJumper.getInstance().getDJP(pl);
         if(!(args.length > 0)){
             p.println("&cMissing argument!");
-            p.println("&cModes: Flying, Double_Jump, Jump");
+            p.println("&cModes: Flying, Double_Jumping, Jump");
             return;
         }
         if(Mode.valueOf(args[0].toUpperCase()) == null){
             p.println("&cNot a valid mode!");
-            p.println("&cModes: Flying, Double_Jump, Jump");
+            p.println("&cModes: Flying, Double_Jumping, Jump");
             return;
         }
         if(!p.hasPermission(Mode.getValue(Mode.valueOf(args[0].toUpperCase())))){
