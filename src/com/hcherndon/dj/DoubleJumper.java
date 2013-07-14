@@ -2,6 +2,7 @@ package com.hcherndon.dj;
 
 import com.hcherndon.dj.framework.CommandRegister;
 import com.hcherndon.dj.framework.DJP;
+import com.hcherndon.dj.hook.Listeners;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -23,6 +24,8 @@ public class DoubleJumper extends JavaPlugin {
     private File conFile;
 
     private static DoubleJumper instance;
+
+    private boolean useCooldownMessage = false;
 
     private double multiplier;
     private double horizontalMultiplier;
@@ -99,6 +102,7 @@ public class DoubleJumper extends JavaPlugin {
             getConfig().set("flyPermission", "doublejumper.fly");
             getConfig().set("doubleJumpPermission", "doublejumper.dj");
             getConfig().set("toggleFlightCommand", "fly");
+            getConfig().set("useCooldownMessage", false);
             saveConfig();
         }
     }
@@ -131,6 +135,10 @@ public class DoubleJumper extends JavaPlugin {
         return multiplier;
     }
 
+    public boolean getUseCooldownMessage(){
+        return this.useCooldownMessage;
+    }
+
     public void loadConfigOptions(){
         reloadConfig();
         this.cooldown = getConfig().getLong("cooldownInTicks");
@@ -140,5 +148,6 @@ public class DoubleJumper extends JavaPlugin {
         this.flyPerm = getConfig().getString("flyPermission");
         this.djPerm = getConfig().getString("doubleJumpPermission");
         this.flyCommand = getConfig().getString("toggleFlightCommand");
+        this.useCooldownMessage = getConfig().getBoolean("useCooldownMessage");
     }
 }

@@ -170,6 +170,7 @@ public class DJP {
         v.multiply(DoubleJumper.getInstance().getMultiplier());
         setVelocity(v);
         startWatch();
+        setPlayerAllowCFlight(false);
     }
 
     public void startCooldown(){
@@ -178,7 +179,8 @@ public class DJP {
                 @Override
                 public void run() {
                     isInCooldown = false;
-                    println("&aJump cooled down!");
+                    if(DoubleJumper.getInstance().getUseCooldownMessage())
+                        println("&aJump cooled down!");
                 }
             }, DoubleJumper.getInstance().getCooldown());
     }
@@ -195,6 +197,7 @@ public class DJP {
                             startCooldown();
                             isInCooldown = true;
                         } else{
+                            setPlayerAllowCFlight(true);
                             isInCooldown = false;
                         }
                         return;
