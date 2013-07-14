@@ -62,20 +62,4 @@ public class Commands {
         sender.sendMessage(ChatColor.GREEN + "Player force toggled! Currently: " + d.isOverriddenDJ());
         return;
     }
-
-    @Command(name = "djup", permission = "doublejumper.update", desc = "Updates a players basic permissible objects.", sender = Commandation.Sender.EVERYONE)
-    public static void djup(CommandSender sender, String... args){
-        if(!Validate.checkNumberOfArgs(args, 0)){
-            sender.sendMessage(ChatColor.RED + "You are missing an argument!");
-            return;
-        }
-        DJP d = DoubleJumper.getInstance().getDJP(args[0]);
-        if(d == null){
-            sender.sendMessage(ChatColor.RED + "The player has to be online!");
-            return;
-        }
-        d.setup();
-        sender.sendMessage(ChatColor.GREEN + "Player force updated!");
-        return;
-    }
 }
