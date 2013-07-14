@@ -93,12 +93,6 @@ public class DoubleJumper extends JavaPlugin {
 
     public void setDefaults(){
         if(!conFile.exists()){
-            try {
-                getLogger().log(Level.INFO, "Creating new config!");
-                conFile.createNewFile();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
             reloadConfig();
             saveConfig();
             getConfig().set("cooldownInTicks", 200);
