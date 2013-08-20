@@ -4,6 +4,7 @@ import com.hcherndon.dj.DoubleJumper;
 import com.hcherndon.dj.framework.DJP;
 import com.hcherndon.dj.framework.Mode;
 import com.hcherndon.dj.framework.Validate;
+import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -38,6 +39,8 @@ public class Listeners implements Listener{
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onToggleFlight(PlayerToggleFlightEvent e){
+        if(e.getPlayer().getGameMode() == GameMode.CREATIVE)
+            return;
         Validate.checkNullDJP(e.getPlayer().getName());
         e.setCancelled(DoubleJumper.getInstance().getDJP(e.getPlayer()).invoke());
     }
