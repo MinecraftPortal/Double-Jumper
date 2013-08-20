@@ -15,9 +15,6 @@ import org.bukkit.event.player.*;
 /**
  * Created with IntelliJ IDEA.
  * User: HcHerndon
- * Date: 7/13/13
- * Time: 5:09 PM
- * To change this template use File | Settings | File Templates.
  */
 public class Listeners implements Listener{
     @EventHandler(priority = EventPriority.NORMAL)
