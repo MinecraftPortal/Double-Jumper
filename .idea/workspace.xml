@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hcherndon/dj/hook/Listeners.java" afterPath="$PROJECT_DIR$/src/com/hcherndon/dj/hook/Listeners.java" />
-    </list>
+    <list default="true" id="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" name="Default" comment="" />
     <ignored path="Double Jumper.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="3ee34f21-284d-4c1e-b2a2-b9c3f7f34e30" time="1376980331010" ignored="false" />
